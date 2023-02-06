@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/EtId"
+        android:layout_width="350dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="ID BARANG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EtNm"
+        android:layout_width="350dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="NAMA BARANG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtId" />
+
+    <EditText
+        android:id="@+id/EtHrg"
+        android:layout_width="350dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="HARGA BARANG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtNm" />
+
+    <EditText
+        android:id="@+id/EtST"
+        android:layout_width="350dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="STOK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtHrg" />
+
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="175dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#395B64"
+        android:text="SAVE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtST" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="175dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#395B64"
+        android:text="UPDATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSimpan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
